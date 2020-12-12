@@ -10,7 +10,10 @@ const PurchasedProductListItem = (
 					{
 						product.is_refundable == 0 ?
 						<label className="btn-sm text-danger">Purchased</label> :
-						<button className="btn btn-primary" onClick={() => onClick(product.id)}>Refund</button>
+						product.loading ?
+						<label className="btn-sm text-danger">Refunded</label> :
+						<button className="btn btn-primary" onClick={() => onClick(product.id)}>Refund</button> 
+
 					}
 				</div>			
 			</div>

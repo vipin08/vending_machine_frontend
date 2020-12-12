@@ -2,7 +2,9 @@ import {
 	FETCH_PRODUCTS,
 	FETCH_PRODUCTS_DONE,
 	BUY_PRODUCT,
-	BUY_PRODUCT_DONE
+	BUY_PRODUCT_DONE,
+	REFUND_PRODUCT,
+	REFUND_PRODUCT_DONE
 } from '../constants/ActionTypes';
 import keyBy from 'lodash/keyBy';
 
@@ -40,6 +42,22 @@ const reducer = (state = initialState, action) => {
 				[action.payload]: {...state.data[action.payload],
 					loading: false,
 					count: state.data[action.payload].count - 1
+				}
+			}
+		};
+	case REFUND_PRODUCT:
+		return {...state,
+			data: {...state.data,
+				[action.payload]: {...state.data[action.payload],
+					loading: true
+				}
+			}
+		};
+	case REFUND_PRODUCT_DONE:
+		return {...state,
+			data: {...state.data,
+				[action.payload]: {...state.data[action.payload],
+					loading: false
 				}
 			}
 		};

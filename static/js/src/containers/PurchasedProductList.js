@@ -18,7 +18,8 @@ const ProductList = (
 
 ProductList.propTypes = {
 	products: PropTypes.arrayOf(PropTypes.shape({
-		id: PropTypes.number.isRequired
+		id: PropTypes.number.isRequired,
+		loading: PropTypes.bool.isRequired
 	}).isRequired),
 	onProductRefundClick: PropTypes.func.isRequired
 };
