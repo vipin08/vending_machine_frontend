@@ -1,6 +1,6 @@
 ## Vending Frontend
 
-Frontend is build on Reactjs and Redux for better state management.
+A frontend is built on Reactjs and Redux for better state management.
 
 ### Folder Structure:
 
@@ -63,9 +63,9 @@ https//:localhost:8080
 #### Functionality:
 
 1. I decided to use just Rupee banknotes of ₹10, ₹20, ₹50, ₹100 and set prices on reactjs as int numbers on `Sidebar.js`.
-2. Also I've added number of products so the product could be out of stock when count is `0` from project list api.
-3. All purchased product shown on right side after cick on buy button.
-4. Refund only eligible if `is_refundable` is `true` in product listing API.
+2. Also I've added several products so the product could be out of stock when the count is `0` from project list API.
+3. All purchased product is shown on the right side after a click on the buy button.
+4. Refund only eligible if `is_refundable` is `true` in the product listing API.
 
 
 ## How to use it
