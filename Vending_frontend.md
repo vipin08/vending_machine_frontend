@@ -70,6 +70,12 @@ https//:localhost:8080
 
 ## How to use it
 
+#### Requirement
+
+```
+nodejs => 6.0
+```
+
 ```bash
 $ # Get the code
 $ cd vending-machine
